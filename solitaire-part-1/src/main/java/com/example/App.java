@@ -1,14 +1,12 @@
 package com.example;
 
 import javax.swing.*;
-
+import java.awt.*;
 import java.awt.BorderLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 public class App {
     public static void main(String[] args) { 
       //add your code here!
+      
       //Create the main frame
       JFrame frame = new JFrame(" ");
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,12 +37,12 @@ public class App {
 
         // Bottom Panel (SOUTH)
         JPanel bottomPanel = new JPanel();
-        JLabel infoLabel = new JLabel("Welcome to Nebiyou's Solitatre. Here you will play Solitare and have lots of fun. Look up directions on google, if you don't know how to play.");
+        JLabel infoLabel = new JLabel("Welcome to Nebiyou's Solitare. Here you will play Solitare and have lots of fun. Look up directions on google, if you don't know how to play.");
         bottomPanel.add(infoLabel);
         frame.add(bottomPanel, BorderLayout.SOUTH);
 
-      
-      frame.setVisible(true);
+        //Set frame to visible
+        frame.setVisible(true);
 
       
     }
